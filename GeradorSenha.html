@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Senhas</title>
+    <style>
+       
+
+    </style>
+    <link rel="stylesheet" href="style/estilo.css"/> 
+    
+</head>
+<body>
+
+    <section id="secao">
+
+        
+            <div class="logo">
+                <h1>Gerador de Senhas</h1>
+            </div>
+            <div class="formulario">
+                <div class="rangeUm">
+                    <label for="range">Tamanho <span id="mostradorDinamico"></span> Caracteres</label>
+                    <input type="range"  oninput="exibirMostrador() " id="range" name="range" min="8" max="12" value="0"/>
+                </div>
+                <div class="entrada">
+                    <button id="botao">Gerar Senha</button>
+                </div>
+            </div>
+            
+            <div class="mostrarSenhaUsuario">
+
+                    <h2>Senha Gerada com Sucesso : <span id="userSenha"></span> </h2>
+
+            </div>
+
+    </section>
+
+    <script src="app.js"></script>
+</body>
+</html>
